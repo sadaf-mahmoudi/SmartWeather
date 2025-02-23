@@ -51,7 +51,7 @@ const ForecastPage = () => {
               <div key={index} className="forecast-card">
                 <p>{new Date(item.dt * 1000).toLocaleDateString()}</p>
                 <img
-                  src={`http://openweathermap.org/img/wn/${item.weather[0].icon}@2x.png`}
+                  src={`https://openweathermap.org/img/wn/${item.weather[0].icon}@2x.png`}
                   alt={item.weather[0].description}
                 />
                 <p>Temp: {Math.round(item.main.temp)}°C</p>
